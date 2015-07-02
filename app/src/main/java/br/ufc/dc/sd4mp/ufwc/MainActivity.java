@@ -447,7 +447,6 @@ public class MainActivity extends ActionBarActivity {
         @Override
         protected void onPreExecute() {
 
-            // TODO Auto-generated method stub
             super.onPreExecute();
 
             if (dialog == null) {
