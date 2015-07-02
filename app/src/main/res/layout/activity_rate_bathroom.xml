@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.ufc.dc.sd4mp.ufwc.RateBathroomActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView5" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hygienization:"
+                    android:textStyle="bold"
+                    android:id="@+id/textView51" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginLeft="7.5dp"
+                    android:id="@+id/radioGroup">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Great"
+                        android:id="@+id/radioButton5" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Good"
+                        android:id="@+id/radioButton6" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Regular"
+                        android:id="@+id/radioButton7" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poor"
+                        android:id="@+id/radioButton8" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unbearable"
+                        android:id="@+id/radioButton9" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Has:"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/textView52" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Door(s)"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginLeft="7.5dp"
+                    android:id="@+id/checkBox" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mirror(s)"
+                    android:layout_marginLeft="7.5dp"
+                    android:id="@+id/checkBox2" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toilet(s)"
+                    android:layout_marginLeft="7.5dp"
+                    android:id="@+id/checkBox3" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paper"
+                    android:layout_marginLeft="7.5dp"
+                    android:id="@+id/checkBox4" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Washbasin(s)"
+                    android:layout_marginLeft="7.5dp"
+                    android:id="@+id/checkBox5" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water"
+                    android:layout_marginLeft="7.5dp"
+                    android:id="@+id/checkBox6" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soap(s)"
+                    android:layout_marginLeft="7.5dp"
+                    android:id="@+id/checkBox7" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shower(s)"
+                    android:layout_marginLeft="7.5dp"
+                    android:id="@+id/checkBox8" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accessibility"
+                    android:layout_marginLeft="7.5dp"
+                    android:id="@+id/checkBox9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comment:"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/textView54" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editText9" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Confirm"
+                android:onClick="confirmReview"
+                android:id="@+id/button8" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
