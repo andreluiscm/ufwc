@@ -74,8 +74,8 @@ public class MainActivity extends ActionBarActivity {
         checkIfLoggedIn();
 
         initMap();
-        moveToDC();
-        //moveToCurrentPosition();
+        //moveToDC();
+        moveToCurrentPosition();
         setMapMovable();
         initMapListeners();
         //initDataTest();
@@ -158,10 +158,10 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onLocationChanged(Location location) {
 
-                MarkerOptions marker = new MarkerOptions()
-                        .position(new LatLng(location.getLatitude(), location.getLongitude()))
-                        .title("You are here!")
-                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN));
+                //MarkerOptions marker = new MarkerOptions()
+                        //.position(new LatLng(location.getLatitude(), location.getLongitude()))
+                        //.title("You are here!")
+                        //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN));
 
                 CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(location.getLatitude(), location.getLongitude())).zoom(18).build();
 
